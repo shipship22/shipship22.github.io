@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+
+# 博客分析报告（本地文档，不纳入版本管理）
+博客分析报告.md
