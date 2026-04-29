@@ -109,7 +109,6 @@ search:
 sitemap:
   path:
     - sitemap.xml
-  template: ./node_modules/hexo-generator-sitemap/sitemap_template.xml
   rel: false
   tags: true
   categories: true
