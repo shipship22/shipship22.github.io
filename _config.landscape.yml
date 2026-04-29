@@ -1,0 +1,66 @@
+# ===============
+# Header
+# ===============
+# 导航菜单
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  关于: /about
+
+# RSS 链接
+rss: /atom.xml
+
+# 页面顶部横幅图片路径
+banner: "images/banner.jpg"
+
+# Header 右上角社交图标链接（图标名称对应 Fork Awesome）
+links:
+  github: https://github.com/shipship22
+
+# ===============
+# Content
+# ===============
+# 文章摘要末尾的"阅读更多"链接，false 则隐藏
+excerpt_link: 阅读更多
+
+# 启用 fancybox 图片灯箱
+fancybox: true
+
+# ===============
+# Footer
+# ===============
+copyright:
+
+# ===============
+# Sidebar
+# ===============
+# 侧边栏位置：left / right / bottom / false
+sidebar: right
+
+# 侧边栏小组件
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+# ===============
+# Widget 行为
+# ===============
+archive_type: 'monthly'
+show_count: true
+recent_posts_limits: 5
+
+# ===============
+# Miscellaneous
+# ===============
+google_analytics:
+favicon: /favicon.png
+
+# ===============
+# 评论系统
+# ===============
+disqus_shortname:
