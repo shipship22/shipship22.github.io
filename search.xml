@@ -1,83 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客搭建记录：用 Hexo + GitHub Pages 搭建个人博客</title>
-    <url>/2025/03/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>欢迎来到我的博客！这是我用 <strong>Hexo + GitHub Pages</strong> 搭建的个人博客，这篇文章记录了整个搭建过程。</p>
-<span id="more"></span>
-
-<h2 id="为什么选择-Hexo"><a href="#为什么选择-Hexo" class="headerlink" title="为什么选择 Hexo"></a>为什么选择 Hexo</h2><p>在考虑了多种方案后，选择了 Hexo 的理由：</p>
-<ul>
-<li><strong>静态站点</strong>：无需服务器，GitHub Pages 免费托管</li>
-<li><strong>Markdown 写作</strong>：专注内容，无需关心 HTML</li>
-<li><strong>中文社区活跃</strong>：遇到问题容易找到解答</li>
-<li><strong>主题丰富</strong>：从简洁到绚丽，各种风格可选</li>
-</ul>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 Node.js（推荐 v18+）</span></span><br><span class="line"><span class="comment"># 访问 https://nodejs.org 下载</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 Hexo CLI</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 访问 http://localhost:4000</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="关键配置（-config-yml）"><a href="#关键配置（-config-yml）" class="headerlink" title="关键配置（_config.yml）"></a>关键配置（<code>_config.yml</code>）</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">你的博客标题</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">你的名字</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://你的用户名.github.io</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><p>本博客使用 <strong>GitHub Actions</strong> 自动化部署，每次推送到 <code>main</code> 分支时自动构建并发布。详见仓库根目录的 <code>README.md</code>。</p>
-<h2 id="下一步计划"><a href="#下一步计划" class="headerlink" title="下一步计划"></a>下一步计划</h2><ul>
-<li><input disabled="" type="checkbox"> 更换主题（考虑 Butterfly 或 Next）</li>
-<li><input disabled="" type="checkbox"> 添加评论系统</li>
-<li><input disabled="" type="checkbox"> 配置站点搜索</li>
-<li><input disabled="" type="checkbox"> 接入 Google Analytics</li>
-</ul>
-<hr>
-<p>有问题欢迎在评论区交流！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub Pages</tag>
-        <tag>博客搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 常用命令速查</title>
-    <url>/2025/03/24/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</url>
-    <content><![CDATA[<p>日常使用 Hexo 时最常用的命令合集，方便随时查阅。</p>
-<span id="more"></span>
-
-<h2 id="文章管理"><a href="#文章管理" class="headerlink" title="文章管理"></a>文章管理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建文章</span></span><br><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建草稿</span></span><br><span class="line">hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将草稿发布</span></span><br><span class="line">hexo publish <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>新建的文章保存在 <code>source/_posts/</code> 目录，Markdown 格式，支持 Front Matter：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-01-01 12:00:00</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">分类名</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动本地服务器（默认端口 4000）</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定端口</span></span><br><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
-
-<h2 id="生成与部署"><a href="#生成与部署" class="headerlink" title="生成与部署"></a>生成与部署</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成静态文件（输出到 public/ 目录）</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并命令</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清理缓存和生成文件</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清理后重新生成（推荐出现奇怪问题时使用）</span></span><br><span class="line">hexo clean &amp;&amp; hexo g</span><br></pre></td></tr></table></figure>
-
-<h2 id="页面管理"><a href="#页面管理" class="headerlink" title="页面管理"></a>页面管理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建独立页面（如 About、Tags、Categories）</span></span><br><span class="line">hexo new page <span class="string">&quot;about&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;tags&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>创建后编辑 <code>source/about/index.md</code> 等文件即可。</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="文章不显示？"><a href="#文章不显示？" class="headerlink" title="文章不显示？"></a>文章不显示？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
-
-<h3 id="中文文章链接乱码？"><a href="#中文文章链接乱码？" class="headerlink" title="中文文章链接乱码？"></a>中文文章链接乱码？</h3><p>在 <code>_config.yml</code> 中设置固定 permalink：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:abbrlink/</span></span><br></pre></td></tr></table></figure>
-
-<p>安装插件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>收藏这篇文章，下次忘记命令时直接来查！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>速查表</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GitHub Copilot Agent Skills 全面推荐指南</title>
     <url>/2026/04/29/GitHub-Copilot-Agent-Skills-%E6%8E%A8%E8%8D%90%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p>作为一名开发者，我日常使用 GitHub Copilot 已经相当熟练，但直到深入探索 <strong>Agent Skills（智能体技能）</strong> 这一功能后，才真正感受到 AI 辅助开发的效率飞跃。本文将介绍我目前已安装的所有 Agent Skills，帮助你按需选择最适合的工具组合。</p>
@@ -186,6 +109,83 @@
         <tag>AI工具</tag>
         <tag>效率提升</tag>
         <tag>Agent Skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 常用命令速查</title>
+    <url>/2025/03/24/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</url>
+    <content><![CDATA[<p>日常使用 Hexo 时最常用的命令合集，方便随时查阅。</p>
+<span id="more"></span>
+
+<h2 id="文章管理"><a href="#文章管理" class="headerlink" title="文章管理"></a>文章管理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建文章</span></span><br><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建草稿</span></span><br><span class="line">hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将草稿发布</span></span><br><span class="line">hexo publish <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>新建的文章保存在 <code>source/_posts/</code> 目录，Markdown 格式，支持 Front Matter：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-01-01 12:00:00</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">分类名</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动本地服务器（默认端口 4000）</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定端口</span></span><br><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成与部署"><a href="#生成与部署" class="headerlink" title="生成与部署"></a>生成与部署</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成静态文件（输出到 public/ 目录）</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 或简写</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并命令</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清理缓存和生成文件</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清理后重新生成（推荐出现奇怪问题时使用）</span></span><br><span class="line">hexo clean &amp;&amp; hexo g</span><br></pre></td></tr></table></figure>
+
+<h2 id="页面管理"><a href="#页面管理" class="headerlink" title="页面管理"></a>页面管理</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建独立页面（如 About、Tags、Categories）</span></span><br><span class="line">hexo new page <span class="string">&quot;about&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;tags&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>创建后编辑 <code>source/about/index.md</code> 等文件即可。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="文章不显示？"><a href="#文章不显示？" class="headerlink" title="文章不显示？"></a>文章不显示？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="中文文章链接乱码？"><a href="#中文文章链接乱码？" class="headerlink" title="中文文章链接乱码？"></a>中文文章链接乱码？</h3><p>在 <code>_config.yml</code> 中设置固定 permalink：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:abbrlink/</span></span><br></pre></td></tr></table></figure>
+
+<p>安装插件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>收藏这篇文章，下次忘记命令时直接来查！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>速查表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建记录：用 Hexo + GitHub Pages 搭建个人博客</title>
+    <url>/2025/03/22/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>欢迎来到我的博客！这是我用 <strong>Hexo + GitHub Pages</strong> 搭建的个人博客，这篇文章记录了整个搭建过程。</p>
+<span id="more"></span>
+
+<h2 id="为什么选择-Hexo"><a href="#为什么选择-Hexo" class="headerlink" title="为什么选择 Hexo"></a>为什么选择 Hexo</h2><p>在考虑了多种方案后，选择了 Hexo 的理由：</p>
+<ul>
+<li><strong>静态站点</strong>：无需服务器，GitHub Pages 免费托管</li>
+<li><strong>Markdown 写作</strong>：专注内容，无需关心 HTML</li>
+<li><strong>中文社区活跃</strong>：遇到问题容易找到解答</li>
+<li><strong>主题丰富</strong>：从简洁到绚丽，各种风格可选</li>
+</ul>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 Node.js（推荐 v18+）</span></span><br><span class="line"><span class="comment"># 访问 https://nodejs.org 下载</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 Hexo CLI</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 访问 http://localhost:4000</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="关键配置（-config-yml）"><a href="#关键配置（-config-yml）" class="headerlink" title="关键配置（_config.yml）"></a>关键配置（<code>_config.yml</code>）</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">你的博客标题</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">你的名字</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://你的用户名.github.io</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><p>本博客使用 <strong>GitHub Actions</strong> 自动化部署，每次推送到 <code>main</code> 分支时自动构建并发布。详见仓库根目录的 <code>README.md</code>。</p>
+<h2 id="下一步计划"><a href="#下一步计划" class="headerlink" title="下一步计划"></a>下一步计划</h2><ul>
+<li><input disabled="" type="checkbox"> 更换主题（考虑 Butterfly 或 Next）</li>
+<li><input disabled="" type="checkbox"> 添加评论系统</li>
+<li><input disabled="" type="checkbox"> 配置站点搜索</li>
+<li><input disabled="" type="checkbox"> 接入 Google Analytics</li>
+</ul>
+<hr>
+<p>有问题欢迎在评论区交流！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub Pages</tag>
+        <tag>博客搭建</tag>
       </tags>
   </entry>
 </search>
