@@ -98,6 +98,15 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+# Sitemap
+sitemap:
+  path:
+    - sitemap.xml
+  template: ./node_modules/hexo-generator-sitemap/sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
+
 # Feed (RSS)
 feed:
   enable: true
